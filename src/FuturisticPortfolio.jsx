@@ -18,8 +18,8 @@ const data = {
 
   /* Work Timeline */
   timeline: [
-    { title: "Frontend Developer", company: "College  Hakaton", range: "2024" },
-      { title: "Backend Developer", company: "TchExpo", range: "2025" },
+    { title: "Frontend Developer", company: "College  Hakathon", range: "2024" },
+      { title: "Backend Developer", company: "TechExpo", range: "2025" },
     // { title: "Intern", company: "Startup X", range: "2019 - 2020" },
   ],
 
@@ -37,9 +37,9 @@ const data = {
   projects: [
     {
       id: 1,
-      title: "MADE A GAME OF PING PONG ",
+      title: " ROCK PAPER  GAME WITH MULTIPLAYER ",
       desc: "Can be played by a duo",
-      tech: ["React", "Node.js", "Express.js"],
+      tech: ["React", "Tailwind", "Framer motion ", " Socket.io(soon)"],
     },
     {
       id: 2,
@@ -55,11 +55,11 @@ const data = {
     // },
   ],
   /* Featured Articles */
-  articles: [
-    { id: 1, title: "Mastering React Performance", desc: "Advanced memoization, batching, concurrency." },
-    // { id: 2, title: "Framer Motion Super Guide", desc: "Cinematic UI animation techniques." },
-    // { id: 3, title: "Tailwind for Large Systems", desc: "Architecture, scaling, and patterns." },
-  ],
+  // articles: [
+  //   { id: 1, title: "Mastering React Performance", desc: "Advanced memoization, batching, concurrency." },
+  //   // { id: 2, title: "Framer Motion Super Guide", desc: "Cinematic UI animation techniques." },
+  //   // { id: 3, title: "Tailwind for Large Systems", desc: "Architecture, scaling, and patterns." },
+  // ],
 
  
 
@@ -72,7 +72,7 @@ const data = {
 
   /* Certificates */
   certificates: [
-    { id: 1, title: "React", org: "Udemy", date: "2024-06-12" },
+    { id: 1, title: "Frontend Development", org: "Udemy", date: "2024-06-12" },
     // { id: 2, title: "Framer Motion Mastery", org: "Egghead", date: "2023-11-01" },
     { id: 2, title: "Full-Stack Bootcamp", org: "Coursera", date: "2025-05-01" },
     { id: 3, title: "Python", org: "Infosys springboard", date: "2025-03-25" },
@@ -245,19 +245,19 @@ function ProjectCard({ p }) {
   );
 }
 
-function ArticleCard({ a }) {
-  return (
-    <HoloCard>
-      <div className="text-sm uppercase text-[#9EE6FF] tracking-wider mb-2">Article</div>
-      <div className="text-lg font-semibold text-[#E8FBFF]">{a.title}</div>
-      <div className="text-sm text-[#9ED8EE] mt-2">{a.desc}</div>
-      <div className="mt-3 flex gap-2">
-        <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(6,182,212,0.06)] border border-[#06b6d430]">Read</button>
-        <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(255,255,255,0.02)] border">Share</button>
-      </div>
-    </HoloCard>
-  );
-}
+// function ArticleCard({ a }) {
+//   return (
+//     <HoloCard>
+//       <div className="text-sm uppercase text-[#9EE6FF] tracking-wider mb-2">Article</div>
+//       <div className="text-lg font-semibold text-[#E8FBFF]">{a.title}</div>
+//       <div className="text-sm text-[#9ED8EE] mt-2">{a.desc}</div>
+//       <div className="mt-3 flex gap-2">
+//         <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(6,182,212,0.06)] border border-[#06b6d430]">Read</button>
+//         <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(255,255,255,0.02)] border">Share</button>
+//       </div>
+//     </HoloCard>
+//   );
+// }
 
 
 function AchieveBadge({ a }) {
