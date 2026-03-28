@@ -54,12 +54,12 @@ const data = {
     //   tech: ["Next.js", "Socket.IO", "Postgres"],
     // },
   ],
-  /* Featured Articles */
-  articles: [
-    { id: 1, title: "Mastering React Performance", desc: "Advanced memoization, batching, concurrency." },
-    // { id: 2, title: "Framer Motion Super Guide", desc: "Cinematic UI animation techniques." },
-    // { id: 3, title: "Tailwind for Large Systems", desc: "Architecture, scaling, and patterns." },
-  ],
+  // /* Featured Articles */
+  // articles: [
+  //   { id: 1, title: "Mastering React Performance", desc: "Advanced memoization, batching, concurrency." },
+  //   // { id: 2, title: "Framer Motion Super Guide", desc: "Cinematic UI animation techniques." },
+  //   // { id: 3, title: "Tailwind for Large Systems", desc: "Architecture, scaling, and patterns." },
+  // ],
 
  
 
