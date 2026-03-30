@@ -225,14 +225,14 @@ function HoloCard({ children, className = "" }) {
 }
 function ProjectCard({ p }) {
   return (
-    <HoloCard className="flex flex-col justify-between">
+    <HoloCard className="flex flex-col justify-between ">
       <div>
         <div className="text-sm uppercase text-[#9EE6FF] tracking-wider mb-2">Project</div>
         <div className="text-lg font-semibold text-[#E8FBFF]">{p.title}</div>
         <div className="text-sm text-[#9ED8EE] mt-2">{p.desc}</div>
       </div>
       <div className="mt-4 flex items-center justify-between">
-        <div className="flex gap-4 text-xs">
+        <div className="flex gap-1 text-xs">
           {p.tech.map((t) => (
             <div key={t} className="px-2 py-1 rounded-full bg-[rgba(255,255,255,0.02)] border text-xs">{t}</div>
           ))}
@@ -526,7 +526,7 @@ export default function FuturisticPortfolio() {
                   I build futuristic, interactive UIs and delightful developer experiences.
                 </motion.p>
                 <div className="mt-4 flex gap-3">
-                  <button onClick={() => scrollTo("projects")} className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#06b6d4]/30 to-[#60a5fa]/20 border border-[#06b6d460]">View Portfolio</button>
+                  {/* <button onClick={() => scrollTo("projects")} className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#06b6d4]/30 to-[#60a5fa]/20 border border-[#06b6d460]">View Portfolio</button> */}
                   <button className="px-4 py-2 rounded-lg bg-[rgba(255,255,255,0.02)] border border-white/6 flex items-center gap-2"> <FiDownload /> Download Resume</button>
                 </div>
               </div>
@@ -538,7 +538,7 @@ export default function FuturisticPortfolio() {
             </div>
           </section>
 
-          {/* ARTICLES */}
+          {/* ARTICLES
           <section id="articles" className="mt-6">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-2xl font-semibold text-[#E8FBFF]">Articles</h2>
@@ -549,7 +549,7 @@ export default function FuturisticPortfolio() {
                 <ArticleCard key={a.id} a={a} />
               ))}
             </div>
-          </section>
+          </section> */}
 
           {/* PROJECTS */}
           <section id="projects" className="mt-8">
