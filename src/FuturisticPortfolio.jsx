@@ -54,12 +54,12 @@ const data = {
     //   tech: ["Next.js", "Socket.IO", "Postgres"],
     // },
   ],
-  /* Featured Articles */
-  articles: [
-    { id: 1, title: "Mastering React Performance", desc: "Advanced memoization, batching, concurrency." },
-    // { id: 2, title: "Framer Motion Super Guide", desc: "Cinematic UI animation techniques." },
-    // { id: 3, title: "Tailwind for Large Systems", desc: "Architecture, scaling, and patterns." },
-  ],
+  // /* Featured Articles */
+  // articles: [
+  //   { id: 1, title: "Mastering React Performance", desc: "Advanced memoization, batching, concurrency." },
+  //   // { id: 2, title: "Framer Motion Super Guide", desc: "Cinematic UI animation techniques." },
+  //   // { id: 3, title: "Tailwind for Large Systems", desc: "Architecture, scaling, and patterns." },
+  // ],
 
  
 
@@ -245,19 +245,19 @@ function ProjectCard({ p }) {
   );
 }
 
-function ArticleCard({ a }) {
-  return (
-    <HoloCard>
-      <div className="text-sm uppercase text-[#9EE6FF] tracking-wider mb-2">Article</div>
-      <div className="text-lg font-semibold text-[#E8FBFF]">{a.title}</div>
-      <div className="text-sm text-[#9ED8EE] mt-2">{a.desc}</div>
-      <div className="mt-3 flex gap-2">
-        <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(6,182,212,0.06)] border border-[#06b6d430]">Read</button>
-        <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(255,255,255,0.02)] border">Share</button>
-      </div>
-    </HoloCard>
-  );
-}
+// function ArticleCard({ a }) {
+//   return (
+//     <HoloCard>
+//       <div className="text-sm uppercase text-[#9EE6FF] tracking-wider mb-2">Article</div>
+//       <div className="text-lg font-semibold text-[#E8FBFF]">{a.title}</div>
+//       <div className="text-sm text-[#9ED8EE] mt-2">{a.desc}</div>
+//       <div className="mt-3 flex gap-2">
+//         <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(6,182,212,0.06)] border border-[#06b6d430]">Read</button>
+//         <button className="px-3 py-1 rounded-lg text-sm bg-[rgba(255,255,255,0.02)] border">Share</button>
+//       </div>
+//     </HoloCard>
+//   );
+// }
 
 
 function AchieveBadge({ a }) {
