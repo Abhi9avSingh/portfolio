@@ -600,10 +600,7 @@ export default function FuturisticPortfolio() {
 
       <footer className="absolute left-0 right-0 bottom-6 flex items-center justify-center pointer-events-none">
         <div className="pointer-events-auto px-6 py-3 rounded-3xl bg-[rgba(255,255,255,0.01)] border border-white/5 text-xs flex items-center gap-3">
-          {/* <div className="w-8 h-8">
-            <img  className="rounded-full" src="../public/asdfgh.jpg" alt="" />
-          </div> */}
-          {/* <div className="text-[#9ED8EE]">Crafted with ❤️ · Built with React + Tailwind + Framer Motion</div> */}
+          
         </div>
       </footer>
     </div>
