@@ -18,9 +18,10 @@ const data = {
 
   /* Work Timeline */
   timeline: [
-    { title: "Frontend Developer", company: "College  Hakathon", range: "2024" },
+     { title: " SDE Intern", company: "Wyvate", range: "2026 - current" },
+    { title: "Frontend Developer", company: "HACKVSiT 7.0", range: "2026" },
       { title: "Backend Developer", company: "TechExpo", range: "2025" },
-    // { title: "Intern", company: "Startup X", range: "2019 - 2020" },
+   
   ],
 
   /* Skills */
@@ -29,30 +30,30 @@ const data = {
     Frontend: ["React", "Tailwind", "Framer Motion","Next.js"],
     Backend: ["Node.js", "Express.js"],
     Databases: ["MySQL", "MongoDB"],
-    Tools: ["VSCode", "Neovim","Intellij IDEA"],
+    Tools: ["VSCode", "Antigravity", "Cursor"],
     VersionControl: ["Git", "GitHub"],
     OS: ["Linux", "Windows"],
   },
  /* Projects */
   projects: [
-    {
-      id: 1,
-      title: " ROCK PAPER  GAME WITH MULTIPLAYER ",
-      desc: "Can be played by a duo",
-      tech: ["React", "Tailwind", "Framer motion ", " Socket.io(soon)"],
-    },
+    // {
+    //   id: 1,
+    //   title: " ROCK PAPER  GAME WITH MULTIPLAYER ",
+    //   desc: "Can be played by a duo",
+    //   tech: ["React", "Tailwind", "Framer motion ", " Socket.io(soon)"],
+    // },
     {
       id: 2,
       title: "Sci-Fi Weather Dashboard",
       desc: "Floating glass cards, parallax layers, 3D tilt UI.",
       tech: ["React", "Three.js", "OpenAI API"],
     },
-    // {
-    //   id: 3,
-    //   title: "Realtime Dev Analytics",
-    //   desc: "Live activity heatmap + glowing hologram graphs.",
-    //   tech: ["Next.js", "Socket.IO", "Postgres"],
-    // },
+    {
+      id: 3,
+      title: "GiT MATE",
+      desc: " Directly pushes code to github after vscode is closed",
+      tech: ["Python", "Watchdog", "Google Gemini API"],
+    },
   ],
   // /* Featured Articles */
   // articles: [
@@ -65,7 +66,7 @@ const data = {
 
   /* Achievements */
   achievements: [
-    { id: 1, title: "HAKATHON FINALIST", desc: "Reached finals of hakathon having 4000+ teams" },
+    { id: 1, title: " HACKVSiT FINALIST", desc: "Reached finals of hakathon having 4000+ teams" },
     { id: 2, title: "CERTIFICATIONS", desc: "HackerRank (5 certifications: Java, DSA, SQL, React, CSS)" },
     // { id: 3, title: "Open Source Contributor", desc: "50+ contributions to major OSS repos." },
   ],
@@ -218,7 +219,7 @@ function LoadingScreen({ onFinish }) {
 function HoloCard({ children, className = "" }) {
   const ref = useTilt();
   return (
-    <motion.div ref={ref} whileHover={{ scale: 1.02 }} className={`p-4 rounded-2xl bg-[rgba(255,255,255,0.02)] border border-white/5 backdrop-blur-md ${className}`}>
+    <motion.div ref={ref} whileHover={{ scale: 1.02 }} className={`p-4 rounded-2xl bg-[rgb(68, 210, 242)] border border-white/5 backdrop-blur-md ${className}`}>
       {children}
     </motion.div>
   );
@@ -234,11 +235,11 @@ function ProjectCard({ p }) {
       <div className="mt-4 flex items-center justify-between">
         <div className="flex gap-1 text-xs">
           {p.tech.map((t) => (
-            <div key={t} className="px-2 py-1 rounded-full bg-[rgba(255,255,255,0.02)] border text-xs">{t}</div>
+            <div key={t} className="px-2 py-1 rounded-full bg-[rgba(130, 206, 239, 0.6)] border text-xs">{t}</div>
           ))}
         </div>
         <div>
-          <button className="px-3 py-1 rounded-lg text-sm bg-gradient-to-r from-[#06b6d4]/30 to-[#60a5fa]/20 border border-[#06b6d460]">Open</button>
+          <button className="px-3 py-1 rounded-full text-sm bg-gradient-to-r from-[#06b6d4]/30 to-[#60a5fa]/20 border border-[#06b6d460]">Open</button>
         </div>
       </div>
     </HoloCard>
@@ -379,7 +380,7 @@ function TopNav({ onOpenMenu, active, onNavigate }) {
         </div>
 
         <ul className="flex gap-4 text-sm text-[#BCEFFB]">
-          <li onClick={() => onNavigate("articles")} className={`nav-btn ${active === "articles" ? "active" : ""}`}>Articles</li>
+          {/* <li onClick={() => onNavigate("articles")} className={`nav-btn ${active === "articles" ? "active" : ""}`}>Articles</li> */}
           <li onClick={() => onNavigate("projects")} className={`nav-btn ${active === "projects" ? "active" : ""}`}>Projects</li>
           <li onClick={() => onNavigate("achievements")} className={`nav-btn ${active === "achievements" ? "active" : ""}`}>Achievements</li>
           <li onClick={() => onNavigate("certifications")} className={`nav-btn ${active === "certifications" ? "active" : ""}`}>Certifications</li>
@@ -436,7 +437,7 @@ export default function FuturisticPortfolio() {
       html { scroll-behavior: smooth; }
       .nav-btn { padding: 6px 12px; border-radius: 12px; cursor: pointer; transition: all .22s ease; }
       .nav-btn:hover{ transform: scale(1.05); color: #fff; }
-      .nav-btn.active{ background: rgba(6,182,212,0.08); border: 1px solid rgba(6,182,212,0.25); color: #E8FBFF; box-shadow: 0 0 18px rgba(6,182,212,0.22); }
+      .nav-btn.active{ background: rgba(6, 181, 212, 0.66); border: 1px solid rgba(6, 181, 212, 0.56); color: #E8FBFF; box-shadow: 0 0 18px rgba(6,182,212,0.22); }
     `;
     document.head.appendChild(style);
     return () => document.head.removeChild(style);
@@ -488,7 +489,7 @@ export default function FuturisticPortfolio() {
         {menuOpen && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-40 bg-black/40">
             <div className="absolute top-6 left-6">
-              <button onClick={() => setMenuOpen(false)} className="p-2 rounded-lg bg-[rgba(255,255,255,0.02)]"> <FiX /> </button>
+              <button onClick={() => setMenuOpen(false)} className="p-2 rounded-lg bg-[rgba(28, 186, 207, 0.63)]"> <FiX /> </button>
             </div>
             <div className="h-full flex items-center justify-center">
               <div className="w-11/12 max-w-md p-6 rounded-2xl bg-[rgba(255,255,255,0.03)] border border-white/5">
@@ -527,7 +528,7 @@ export default function FuturisticPortfolio() {
                 </motion.p>
                 <div className="mt-4 flex gap-3">
                   {/* <button onClick={() => scrollTo("projects")} className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#06b6d4]/30 to-[#60a5fa]/20 border border-[#06b6d460]">View Portfolio</button> */}
-                  <button className="px-4 py-2 rounded-lg bg-[rgba(255,255,255,0.02)] border border-white/6 flex items-center gap-2"> <FiDownload /> Download Resume</button>
+                  {/* <button className="px-4 py-2 rounded-lg bg-[rgba(255,255,255,0.02)] border border-white/6 flex items-center gap-2"> <FiDownload /> Download Resume</button> */}
                 </div>
               </div>
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-xl bg-[rgba(255,255,255,0.02)] border border-white/5 flex items-center justify-center">
@@ -580,7 +581,7 @@ export default function FuturisticPortfolio() {
           </section>
 
           {/* CERTIFICATIONS */}
-          <section id="certifications" className="mt-8">
+          {/* <section id="certifications" className="mt-8">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="text-sm text-[#9EE6FF]">Filter by Organization</div>
@@ -594,7 +595,7 @@ export default function FuturisticPortfolio() {
             </div>
 
             <CertificationsGrid certs={data.certificates} />
-          </section>
+          </section> */}
         </div>
       </main>
 
